@@ -128,6 +128,9 @@ WORKDIR    |*default* gear directory| |The working directory for the ENTRYPOINT
            | |Prepare|A path to a script (or an embedded script) that will be executed when a cartridge is **prepared**. 
 
 
+### Cartridge Author Workflow
+
+![Cartridge author workflow](images/pep-010-cartridge-author.png)
 
 ### Preparation
 
@@ -184,7 +187,7 @@ Plugin cartridges may complicate this story, and user installed packages complic
 
 V2 and Docker will operate side by side in a single OpenShift environment via application-based code path switching.  The system will use two pools of nodes, one for V2 applications and one for Docker applications, with appropriate runtimes running in the nodes of each pool.  New applications might be created with a flag indicating the stack to use with the application, and those gears would run only on nodes of the appropriate type.
 
-The workflow to upgrade an application from the V2 cartridge system to the Docker cartridge system is at this time unspecified. 
+The workflow to upgrade an application from the V2 cartridge system to the Docker cartridge system is currently unspecified. 
 
 
 ### Managing a gear
